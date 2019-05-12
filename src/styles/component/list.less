@@ -1,0 +1,79 @@
+.total {
+    height: 0.82rem;
+    padding-left: 0.28rem;
+    line-height: 0.82rem;
+    font-size: 0.28rem;
+    color: #000;
+    border-bottom: 1px solid #dfdfdf;
+    .redNum {
+        color: #d65b30;
+    }
+}
+.gayNum {
+    color: #999;
+}
+.allCount{
+    padding: 0 0.28rem;
+    display: flex;
+    justify-content: space-between;
+    height: 0.82rem;
+    align-items: center;
+    font-size: 0.28rem;
+    color: #666;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #dfdfdf;
+    position: relative;
+    z-index: 1;
+    .redT{
+        font-size: 0.32rem;
+        color: #e84b14;
+        .smallT{
+            font-size: 0.24rem;
+            color: #666;
+        }
+    }
+    
+}
+//   场所列表
+.listBox {
+    background-color: #fff;
+    font-size: 0.28rem;
+    .linkBox {
+        color: #000;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 1.4rem;
+        padding: 0 0.28rem;
+        position: relative;
+        .smallText{
+            font-size: 0.24rem;
+            color:#999;
+        }
+        .textFlexBox{
+            display: flex;
+            justify-content: flex-start;
+        }
+        .overText{
+            overflow:hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 4.4rem;
+            margin-left: 0.08rem;
+        }
+        // 箭头
+        .arrowhead{
+            border: rgba(0,0,0,.2) solid;  
+            border-width: 2px 2px 0 0;  
+            width: 0.20rem;  
+            height: 0.20rem;   
+            top: 0.04rem;  
+            transform: rotate(45deg);  
+        }
+    }
+    .linkBox+.linkBox{
+        border-top: 1px solid #dfdfdf;        
+    }
+}
+

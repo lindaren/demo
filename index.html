@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html id="html">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="./static/favicon.ico">
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content=" img-src * data: 'self' 'unsafe-inline' 'unsafe-eval' to http://118.24.74.131 http://mis.fzminben.com https://sentry.io http://localhost:* blob: https://3gimg.qq.com/ http://apis.map.qq.com https://cdn.bootcss.com http://*.cnzz.com http://cnzz.mmstat.com https://cnzz.mmstat.com ws://*:* https://gw.alipayobjects.com ">
+    <title>摩歇座</title>
+    <style>
+        #cnzz_stat_icon_1272901641 {
+            display: none;
+        }
+    </style>
+    <script></script>
+    <script>
+        (function (win) {
+            var doc = win.document,
+                docEl = doc.documentElement,
+                tid,
+                resizeEvt = ['resize', 'orientationchange', 'pageshow'];
+            function refreshRem() {
+                var rem = docEl.getBoundingClientRect().width / 7.5;
+                docEl.style.fontSize = rem + 'px';
+            }
+            for (var i = 0; i < resizeEvt.length; i++) {
+                win.addEventListener(resizeEvt[i], function (e) {
+                    if (resizeEvt[i] == 'pageshow' && !e.persisted) {
+                        return;
+                    }
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 0);
+                }, false);
+            }
+            if (doc.readyState === 'complete') {
+                docEl.style.fontSize = 42 + 'px';
+                refreshRem();
+            } else {
+                doc.addEventListener('DOMContentLoaded', function (e) {
+                    docEl.style.fontSize = 42 + 'px';
+                    refreshRem();
+                }, false);
+            }
+            refreshRem();
+        })(window)
+    </script>
+</head>
+<body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script src="http://ossadv.fjminben.com/res/js/jquery.js"></script>
+    <script src="http://ossadv.fjminben.com/res/js/vue.min.js"></script>
+    <script src="http://ossadv.fjminben.com/res/js/vuex.min.js"></script>
+    <script src="http://ossadv.fjminben.com/res/js/vue-router.min.js"></script>
+    <script src="http://ossadv.fjminben.com/res/js/velocity.min.js"></script>
+    <script src="http://ossadv.fjminben.com/res/js/polyfill.min.js"></script>
+    <script src="http://ossadv.fjminben.com/res/js/axios.min.js"></script>
+    <script src="http://ossadv.fjminben.com/res/js/fastclick.min.js"></script>
+    <script src="./static/js/echarts.min.js"></script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1272901641'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1272901641' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+
+</html>

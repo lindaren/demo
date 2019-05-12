@@ -1,0 +1,68 @@
+//action 组件
+.action-item{
+    font-size: 0.28rem;
+    background-color: #fff;
+    margin-bottom: 0.16rem;
+    padding:0.15rem 0.20rem;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 0;
+    .linkBox{
+        width: 100%;
+        height: 100%;
+    }
+    .action-head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 0.44rem;
+        span{
+            color: rgba(0,0,0,.85);
+        }
+        .phoneSet{
+            margin-right: 0.46rem;
+        }
+    }
+    .sub-head{
+        color: #999;
+        font-size: 0.24rem;
+        padding-bottom: 0.1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .bindS{
+            margin-right: 0.46rem;
+        }
+        .redBind{
+            color: rgba(237,63,20,.7);            
+        }
+    }
+    .ac-footer{
+        border-top: 1px solid #eee;
+        min-height: 0.3rem;
+        .ac-footer-right{
+            text-align: right;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            .icon-box{
+                display: inline-block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.1rem 0.1rem;
+                img{
+                    width: 0.3rem;
+                    max-height: 0.35rem;     
+                    margin: 0 0.05rem;               
+                }
+                .spanIconSize{
+                    font-size: 0.24rem;
+                }
+                &:active{
+                    background-color: rgba(0,0,0,.1);
+                }
+            }
+        }
+    }
+}

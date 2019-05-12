@@ -1,0 +1,60 @@
+.basic{
+    height: 0.82rem;
+    padding-left: 0.28rem;
+    line-height: 0.82rem;
+    font-size: 0.28rem;
+    color: #000;
+}
+.borderTopB{
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+.listBox{
+    background-color: #fff;
+    font-size: 0.28rem;
+    li{
+        min-height: 0.9rem;
+        color: #606060;
+        margin: 0 0.2rem;
+        padding: 0 0.08rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        .titleColor{
+            color: #232323;
+        }
+        a {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+        }
+        .getcode {
+            width: 0.4rem;
+            margin-right: 0.1rem;
+        }
+        .codeBox {
+            display: flex;
+            align-items: center;
+        }
+        span+span{
+            width: 5rem;
+            padding: 0.1rem 0;
+            word-break:break-all;
+            text-align: right;
+        }
+    }
+    li+li{
+        border-top: 1px solid #dfdfdf;    
+    }
+}
+.borderSet{
+    border-top:1px solid #dfdfdf;
+    border-bottom:1px solid #dfdfdf;
+}
+.borderSetLight{
+    border-top:1px solid @bg-color-light;
+    border-bottom:1px solid @bg-color-light;
+}

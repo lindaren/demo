@@ -1,0 +1,37 @@
+.created-tags(length(@lists));
+.created-tags(@n,@i:1) when (@i<=@n){
+    @curr:extract(@lists,@i);
+    //默认灰色
+    .@{curr}-tag{
+        background-color: @bg-color;
+        font-size: @font-size-small ;
+        border-radius: 0.06rem;
+        display: inline-block;
+        min-width:2.2rem;
+        text-align:center;
+        height:0.7rem;
+        line-height:0.7rem;
+        margin-bottom: 0.2rem;
+        color:@font-color ;
+    }
+    //选中状态
+    .@{curr}-tag-active{
+        color:  @@curr;
+        background-color: fade(@@curr,20%);
+    }
+    //主题背景tag small
+    .@{curr}-bg{
+        color:  @@curr;
+        background-color: fade(@@curr,20%);
+        font-size: 0.24rem;
+        border-radius: 0.06rem;
+        display: inline-block;
+        text-align:center;
+        padding: 0.1rem 0.2rem;
+        line-height: 1;
+    }
+    .@{curr}{
+        color:  @@curr;
+    }
+    .created-tags(@n,@i+1);
+}
